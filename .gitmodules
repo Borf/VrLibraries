@@ -1,3 +1,6 @@
 [submodule "VrLib"]
 	path = VrLib
 	url = https://github.com/Borf/VrLib.git
+[submodule "BulletPhysics/bullet3"]
+	path = BulletPhysics/bullet3
+	url = https://github.com/bulletphysics/bullet3.git
