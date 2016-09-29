@@ -4,3 +4,6 @@
 [submodule "BulletPhysics/bullet3"]
 	path = BulletPhysics/bullet3
 	url = https://github.com/bulletphysics/bullet3.git
+[submodule "vrpn"]
+	path = vrpn
+	url = https://github.com/vrpn/vrpn.git
