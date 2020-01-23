@@ -17,6 +17,9 @@
     <ClCompile Include="bullet3\Extras\Serialize\BulletFileLoader\btBulletFile.cpp" />
     <ClCompile Include="bullet3\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp" />
     <ClCompile Include="bullet3\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp" />
+    <ClCompile Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3DynamicBvh.cpp" />
+    <ClCompile Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3DynamicBvhBroadphase.cpp" />
+    <ClCompile Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3OverlappingPairCache.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\BroadphaseCollision\btAxisSweep3.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\BroadphaseCollision\btBroadphaseProxy.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\BroadphaseCollision\btCollisionAlgorithm.cpp" />
@@ -70,12 +73,14 @@
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btCylinderShape.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btEmptyShape.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp" />
+    <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btMiniSDF.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btMinkowskiSumShape.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btMultimaterialTriangleMeshShape.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btMultiSphereShape.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btOptimizedBvh.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btPolyhedralConvexShape.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btScaledBvhTriangleMeshShape.cpp" />
+    <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btSdfCollisionShape.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btShapeHull.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btSphereShape.cpp" />
     <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btStaticPlaneShape.cpp" />
@@ -144,6 +149,7 @@
     <ClCompile Include="bullet3\src\BulletDynamics\Vehicle\btRaycastVehicle.cpp" />
     <ClCompile Include="bullet3\src\BulletDynamics\Vehicle\btWheelInfo.cpp" />
     <ClCompile Include="bullet3\src\BulletSoftBody\btDefaultSoftBodySolver.cpp" />
+    <ClCompile Include="bullet3\src\BulletSoftBody\btDeformableBodySolver.cpp" />
     <ClCompile Include="bullet3\src\BulletSoftBody\btSoftBody.cpp" />
     <ClCompile Include="bullet3\src\BulletSoftBody\btSoftBodyConcaveCollisionAlgorithm.cpp" />
     <ClCompile Include="bullet3\src\BulletSoftBody\btSoftBodyHelpers.cpp" />
@@ -160,23 +166,32 @@
     <ClCompile Include="bullet3\src\LinearMath\btSerializer.cpp" />
     <ClCompile Include="bullet3\src\LinearMath\btVector3.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3BroadphaseCallback.h" />
+    <ClInclude Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3DynamicBvh.h" />
+    <ClInclude Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3DynamicBvhBroadphase.h" />
+    <ClInclude Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3OverlappingPair.h" />
+    <ClInclude Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3OverlappingPairCache.h" />
+    <ClInclude Include="bullet3\src\BulletCollision\CollisionShapes\btSdfCollisionShape.h" />
+    <ClInclude Include="bullet3\src\BulletSoftBody\btSparseSDF.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{CA560089-F243-4A8D-9371-DDC350F0AA54}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>BulletPhysics</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>

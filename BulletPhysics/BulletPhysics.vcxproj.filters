@@ -459,5 +459,46 @@
     <ClCompile Include="bullet3\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3DynamicBvhBroadphase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3OverlappingPairCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3DynamicBvh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btSdfCollisionShape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet3\src\BulletSoftBody\btDeformableBodySolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet3\src\BulletCollision\CollisionShapes\btMiniSDF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3DynamicBvh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3DynamicBvhBroadphase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3OverlappingPair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3OverlappingPairCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet3\src\Bullet3Collision\BroadPhaseCollision\b3BroadphaseCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet3\src\BulletCollision\CollisionShapes\btSdfCollisionShape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet3\src\BulletSoftBody\btSparseSDF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
